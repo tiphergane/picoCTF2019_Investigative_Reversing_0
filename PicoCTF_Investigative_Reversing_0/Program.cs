@@ -8,7 +8,6 @@ namespace PicoCTF_Investigative_Reversing_0
         static void Main(string[] args)
         {
             byte[] BaseFlag = new byte[32];
-            byte[] Buffer = new byte[32];
 
             BaseFlag = Encoding.ASCII.GetBytes("picoCTKçk5zsid6q_57d0d47c}"); 
             int i;
