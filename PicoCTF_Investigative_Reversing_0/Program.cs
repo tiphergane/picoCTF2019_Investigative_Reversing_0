@@ -21,11 +21,13 @@ namespace PicoCTF_Investigative_Reversing_0
             }
             //BaseFlag[7] = 0x7b; // to fix the problem who take the wrong ASCII char
             BaseFlag[i] += 0x3;
-
+            
+            /* is this bloc really usefull ? I don't think so. We will try tonight after work
             for (int j = 0x10; j < 0x1a; j++)
             {
                 BaseFlag[j] = BaseFlag[j];
             }
+            */
             string s = Encoding.UTF8.GetString(BaseFlag);
             Console.WriteLine("Flag is : {0}", s);
             Console.WriteLine("Press Enter to quit");
