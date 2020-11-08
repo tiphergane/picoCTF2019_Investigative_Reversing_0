@@ -19,7 +19,7 @@ namespace PicoCTF_Investigative_Reversing_0
                 BaseFlag[i] -= 0x5;
             }
             BaseFlag[i] += 0x3;
-            string s =  Encoding.UTF8.GetString(BaseFlag);;
+            string s =  Encoding.UTF8.GetString(BaseFlag);
             Console.WriteLine("Flag is : {0}", s);
             var path = @"./flag.txt";
             File.WriteAllText(path,s);
